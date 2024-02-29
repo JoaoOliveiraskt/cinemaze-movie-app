@@ -11,7 +11,7 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite">
       <main className="min-h-screen w-full bg-background flex flex-col">
         <Header />
-        <Banner url="home" />
+        <Banner url="favoritos"/>
 
         <Hero>
           {categories.map((category, index) => (
