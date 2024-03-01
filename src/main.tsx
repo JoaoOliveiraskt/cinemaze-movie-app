@@ -1,7 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import App from "./App.tsx";
 import "./index.css";
 import { ThemeProvider } from "./components/theme-provider.tsx";
 import { RouterProvider } from "react-router-dom";
