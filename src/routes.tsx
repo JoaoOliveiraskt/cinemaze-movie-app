@@ -1,7 +1,7 @@
-import {  createBrowserRouter } from "react-router-dom";
-import Home from "./pages/home"
+import { createBrowserRouter } from "react-router-dom";
+import Home from "./pages/home";
 import Watch from "./pages/watch";
-import PageNotFound from "./pages/pageNotFound";
+import PageNotFound from "./pageNotFound";
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +14,3 @@ export const router = createBrowserRouter([
     element: <Watch />,
   },
 ]);
-
-
-
