@@ -22,11 +22,11 @@ export default function Category({category, children}: props) {
   return (
     <div className="mt-20 flex flex-col justify-center gap-5 px-4">
       <div>
-        <h2 className="text-4xl md:text-center font-semibold tracking-wide">
+        <h2 className="text-4xl text-center font-semibold tracking-wide">
           {category}
         </h2>
       </div>
-      <div className="flex flex-wrap justify-start md:justify-center items-center gap-5">
+      <div className="flex flex-wrap justify-center items-center gap-5">
         {children}
       </div>
     </div>
