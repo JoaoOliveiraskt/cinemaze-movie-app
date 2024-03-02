@@ -10,8 +10,9 @@ export const router = createBrowserRouter([
     errorElement: <PageNotFound />,
   },
   {
-    path: "watch",
+    path: "watch/:id",
     element: <Watch />,
+    errorElement: <PageNotFound />,
   },
 ]);
 

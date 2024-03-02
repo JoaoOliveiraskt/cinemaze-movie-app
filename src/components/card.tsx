@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type props = {
     id: string
 }
@@ -5,10 +7,8 @@ type props = {
 export default function Card({id}: props) {
   return (
     <div className="w-72 h-40 flex border items-center justify-center rounded-xl overflow-hidden">
-      <a
-        href={`https://www.youtube.com/watch?v=${id}`}
-        rel="noreferrer noopener"
-        target="_blank"
+      <Link
+        to={`watch/${id}`}
         className=""
       >
         <img
@@ -16,7 +16,7 @@ export default function Card({id}: props) {
           alt="capa do vídeo"
           className="w-full h-full object-cover"
         />
-      </a>
+      </Link>
     </div>
   );
 }
