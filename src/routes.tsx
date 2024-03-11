@@ -7,12 +7,14 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <PageNotFound />,
   },
   {
     path: "watch/:id",
     element: <Watch />,
-    errorElement: <PageNotFound />,
   },
+  {
+    path: "*",
+    element: <PageNotFound />,
+  }
 ]);
 
