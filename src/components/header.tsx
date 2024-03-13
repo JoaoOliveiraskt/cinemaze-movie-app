@@ -1,13 +1,14 @@
 import { ModeToggle } from "./mode-toggle";
 import { NavLink, Link } from "react-router-dom";
 import links from "../json/links.json";
+import { RiMovie2Fill } from "react-icons/ri";
 
 export default function Header() {
   return (
     <header className="flex fixed top-0 bg-background w-full h-14 items-center justify-around">
       <nav className="flex items-center gap-10">
         <Link to="/">
-          <span className="text-2xl font-bold tracking-tighter">cinemaze</span>
+          <span className="text-2xl font-bold tracking-tighter"><RiMovie2Fill/></span>
         </Link>
         <div className="flex items-center gap-4 tracking-wide font-semibold text-lg">
           {links.map((link) => (
